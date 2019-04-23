@@ -25,8 +25,6 @@ module.exports = {
   target: 'web',
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
-    // Fix webpack's default behavior to not load packages with jsnext:main module
-    // (jsnext:main directs not usually distributable es6 format, but es6 sources)
     mainFields: ['module', 'browser', 'main'],
     alias: {
       app: path.resolve(__dirname, 'src/app/')
@@ -108,7 +106,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+      NODE_ENV: 'development', // process.env.NODE_ENV
       DEBUG: false
     }),
     new CleanWebpackPlugin(),

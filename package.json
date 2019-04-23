@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "description": "A simple todo list application",
+  "author": "Poushali Banerjee",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",

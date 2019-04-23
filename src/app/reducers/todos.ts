@@ -6,7 +6,7 @@ import { TodoModel } from 'app/models';
 const initialState: RootState.TodoState = [
   {
     id: 1,
-    text: 'use BEM',
+    text: 'use BEM, add Jest',
     completed: false
   }
 ];

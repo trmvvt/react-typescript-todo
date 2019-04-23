@@ -66,7 +66,7 @@
   display: block;
   line-height: 1.2;
   transition: color 0.4s;
-  color: #5dc2af;
+  color: #3da4e7;
 }
 
 .normal li.completed label {
@@ -130,11 +130,6 @@
 .toggleAll:checked:before {
   color: #737373;
 }
-
-/*
-  Hack to remove background from Mobile Safari.
-  Can't use it globally since it destroys checkboxes in Firefox
-*/
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .toggleAll,
